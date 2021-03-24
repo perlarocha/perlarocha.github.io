@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Perla Portfolio Website</title>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <svg height="10" width="10" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <pattern id="circles-2" patternUnits="userSpaceOnUse" width="10" height="10"> <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8Y2lyY2xlIGN4PScxLjUnIGN5PScxLjUnIHI9JzEuNScgZmlsbD0nYmxhY2snLz4KPC9zdmc+Cg==" x="0" y="0" width="10" height="10"> </image> </pattern> </defs> </svg>
+
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/portfolio-03.css">
+        <link rel="stylesheet" href="css/flickity-docs.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Homemade+Apple&family=Montserrat&display=swap" rel="stylesheet">
+    
+    </head>
+
+    <body>
+      <header>
+        <div class="logo"></div>
+        <div id="static-menu">
+             <ul class="nav-menu">
+                 <li><a href="index.html" > Work </a></li>
+                 <!-- <li><a href="about.html"> About Me </a></li>   -->
+                 <li><a href="resume.html"> Resume </a></li>                
+                 <li><a href="contact.html"> Contact </a></li>
+             </ul>
+         </div>
+     </header>
+
+     <div id="project-title" class="project-intro" >
+      <h1 class="section-title">
+          Leap Learning
+      </h1>
+      <p class="section-subtitle subtitle-intro"><span class="highlight">
+          Design of a K-5 learning app.
+        </span></p>
+    </div>
+
+        <section id="section-1" class="case-study-section">
+          <h2 class="project-info-header">
+           I. Overview
+          </h2>
+
+          <p class="project-info-detail"><strong>
+            With the rise of homeschooled students still occuring due to Covid-19, many parents are looking for alternative ways to keep their children entertained while also continuing to learn.
+          </strong></p>
+
+          <p class="project-info-detail">
+            Most of the assignments given in virtual lessons can be a bit exhausting for younger students, especially if it involves blocks of text and instructions. Having a good balance of fun and education in activities, videos, and assessments could provide supplementary guidance to develop their learning potential to the fullest. 
+
+            <p class="project-info-detail"><strong>
+            Objective
+          </strong></p>
+
+            
+            <p class="project-info-detail">
+            Designing an educational app solution for young learners that can be used as a supplement to their school assigments.
+            </span></p>
+        </section>
+
+        <section id="section-2" class="case-study-section">
+          <h2 class="project-info-header">
+            II. Research
+          </h2>
+
+          <h3 class="project-info-subheader">
+            Goal: To understand the audience and their primary needs.
+          </h3>
+
+          <p class="project-info-detail">
+            Process: Observations and Interviews, Market Research
+          </p>
+
+          <p class="project-info-detail"><strong>
+            Observations and Interviews:
+          </strong></p>
+
+          <p class="project-info-detail">
+           Currently, the students having the hardest time adjusting to virtual or homeschooling have been students in levels K-5. While missing out on social interaction, they are also having to depend on themselves more as not all teachers are available to teach the same hours online as in pysical classes and parent's are busy with work from home. As such, I believe creating an app that could combine the social and interactive aspects of in-class learning with educational activities that could be done at home, would be of great benefit to the student's progress.
+          </p>
+
+          <p class="project-info-detail">
+            I conducted interviews among three parents with children of ages 6, 9, and 10 to determine what they believe their child has been struggling the most on during this time. I also observed their children's current technological ability as they interacted with apps they already own. 
+          </p>
+
+          <p class="project-info-detail">
+            The notes taken during these observations were then used to develop empathy-persona and journey maps for the users.
+          </p>
+        </section>
+
+        <figure class="maps">
+          <div class="maps-content">
+          <div class="maps-flex">
+            <img src="images/empathypersona_child.jpg" class="map-image" id="journey-map">
+            <img src="images/empathypersona_mother.jpg" class="map-image" id="journey-map">
+          </div>
+
+            <figcaption id="journey-map">
+            Empathy-persona map for a child who would use the app and a mother struggling with virtual school for her child.
+            </figcaption>
+          </div>
+        </figure>
+
+          <section id="section-3" class="case-study-section">    
+            <h3 class="project-info-subheader">
+              Market Research
+            </h3>
+
+          <p class="project-info-detail">
+            According to <a href="https://tech.ed.gov/earlylearning/principles/#:~:text=Developmentally%20appropriate%20use%20of%20technology,in%20fun%20and%20challenging%20activities."> this article </a> technology should be used as a supplement to other learning tools such as "art materials, writing materials, play materials, and books." Fun apps can be used to engage young learners in interactive games or challenges with their peers that motivate them to learn.
+          </p>
+            
+          <p class="project-info-detail">
+            As a previous educator in China, I learned that the best way to promote teamwork and motivation in the classroom was by implementing the use of technology in our lessons, whether through the use of educational videos or interactive games that fit the context of the material they were learning that week. 
+          </p>
+
+          <p class="project-info-detail">
+            However, for students who are not being taught in a traditional classroom setting, as is the case for many children as the risk of Covid-19 continues, it is difficult to maintain this level of interactivity at home. Many parents also do not have the ability to spend much time to teach their children while also working at home, as would be needed with the use of e-books or other learning applications that require extra guidance to check for comprehension.
+          </p>
+        </section>
+
+        <section id="section-3" class="case-study-section">    
+          <h3 class="project-info-subheader">
+            Journey Map
+          </h3>
+
+          <p class="project-info-detail">
+            At the completion of the interviews, observations, and market research, I compiled the information I gathered into a user journey map illustrating a parent's process when accessing the app for the first time. While the parent is not the intended user, they are the intended customer and will justify it's use if it proves useful for their child.
+          </p>
+
+          <p class="project-info-detail">
+            In doing so, I discovered several points of importance to address in the application mockup.
+          </p>
+
+          <div class="info-pic-box">
+            <div class="info-box">
+              <ul class="details-list">
+                <li class="details"><strong class="highlight"> Easy-to-follow structure </strong> Lessons should go in chronolocial order and should build on previous lessons. </li>
+                <li class="details"> <strong class="highlight"> Skill assessment </strong> Option to take a skills test at the beginning of a module or to unlock a new module in order to assess their current level and know which content will need more focus or can be skipped. </li>
+                <li class="details"> <strong class="highlight"> Interactivity with classmates and teacher </strong> Have a local leaderboard with the students in their class. Compete for points. </li>
+                <li class="details"> <strong class="highlight"> Focus on math and reading </strong> Give emphasis to impoving math and reading comprehension. </li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+        <figure class="maps">
+          <div class="maps-content">
+          <img src="images/Leap_journeymap.jpg" class="data-image">
+            <figcaption  id="journey-map">
+              Journey map of a mother and daughter's experience first using the app.
+            </figcaption>
+          </div>
+        </figure>
+
+        <section id="section-5" class="case-study-section">
+          <h2 class="project-info-header">
+           III. Design
+          </h2>
+
+          <h3 class="project-info-subheader"><span class="highlight">
+            Goal: To create lo and hi fidelity prototypes of the app that meets the user's needs.
+          </span></h3>
+
+          <p class="profile-info-detail">
+            Process: Wireframes using Figma. Prototype using AdobeXD.
+          </p>
+
+          <h3 class="project-info-subheader">
+            Wireframes
+          </h3>
+
+          <p class="profile-info-detail detail-italic">
+            At the beginning of my design process I created wireframes for testing purposes.
+            <ul class="details-list">
+              <li class="details"> This helped me to visualize the chronological order for each step in the process. </li>
+              <li class="details"> I made simple lo-fidelity sketches by hand first, then used Figma sketch to create a better layout representation. </li>
+            </ul>
+          </p>
+        </section>
+
+        <figure class="wireframes">
+          <iframe 
+            height="450"
+            width="500"
+            style="border: 1px solid rgba(0, 0, 0, 0.1);"  
+            src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2FKA2gXvOywwcMwv761k2k6p%2FLearning-App%3Fnode-id%3D0%253A1" 
+            class="iframe-style" 
+            allowfullscreen></iframe>
+
+            <div class="wireframe-images">
+              <img src="" alt="" class="wireframe-img">
+            </div>
+        </figure>
+
+
+
+        <section id="section-6" class="case-study-section">
+          <h3 class="project-info-subheader">
+            UI Design
+          </h3>
+
+          <p class="profile-info-detail">
+            Color is important when designing apps, especially those for children. According to <a href="https://www.parent.com/blogs/conversations/how-to-improve-your-childs-mood-with-colors#:~:text=Researchers%20at%20the%20University%20of,and%20green%20is%20for%20glad." alt="" class="p-links"> research </a>, children associate bright colors to postive feelings and dark colors to negative feelings. Keeping in mind color psychology, I decided to opt for bright, warm colors to represent joy and creativity. 
+          </p>
+
+          <p class="profile-info-detail">
+            Children's readibility is crucial, so to provide a valuable and accessible experience, I decided on larger, sans-serif fonts with plenty of icons and visual cues to guide the children throughout the app. A customization feature was also added at the top of the page to allow for font size changes.
+          </p>
+
+          <p class="profile-info-detail">
+            Besides readibility, it is important to factor in how the children will interact with the app. This means reducing the number of gestures required for tasks in the lessons for younger children while gradually incorporating more gestures as the lessons progress in difficulty level. 
+          </p>
+
+          <p class="profile-info-detail">
+            <ul class="details-list">
+              <li class="details"> Based on the interviews, I found that what most parents want for their children is a focus on math and reading that can act as supplementary material to their virtual schooling. </li>
+              <li class="details"> Testing the protype on child users, I saw that were able to navigate through the app quite easily on their own and they enjoyed getting points for their character as they completed the sample lesson. </li>
+            </ul>
+          </p>
+
+          <!-- <p class="profile-info-detail">
+            A link to the prototype can be found <a href="" class="prototype-link" target="_blank"> here </a>.
+          </p> -->
+        </section>
+
+        <figure>
+          <img src="images/Leap_UI.png" alt="" class="final-design">
+        </figure>
+
+        <section id="section-7" class="case-study-section">
+          <h2 class="project-info-header">
+           IV. Final Thoughts
+          </h2>
+
+          <p class="project-info-detail">
+            <ul class="details-list">
+              <li class="details"> One of the main challenges was imagining how a child sees the world. As an adult, we already know so much while children are discovering new things daily.  </li>
+              <li class="details"> Another challenge was determining how to organize content in a way that would be easy and intuitive for students of varied ages. As this app is intended for K-5 level children, I needed to address the difference in not only reading ability but physical ability. Reducing the complexity of gestures and questions for younger children, while progressively increasing thev difficulty and variety for older children.</li>
+              <li class="details"> I learned that apart from making the app a worthwhile educational tool, the only way to truly realize the app's full potential is to incorporate fun colors and graphics that will attract and retain a child's attention. </li>
+              <li class="details"> I enjoy teaching and knowing that I can make a difference in the lives of our youth. Therefore, in the near future, I would like to participate in the development of a real app that can benefit many children for years to come. </li>
+
+            </ul>
+          </p>
+        </section>
+
+        <figure>
+          <iframe 
+            width="450" 
+            height="500" 
+            src="https://miro.com/app/embed/o9J_lNtEBzU=/?pres=1&frameId=3074457356238576435" 
+            frameBorder="0" 
+            scrolling="no" 
+            allowFullScreen>
+        </iframe>
+        </figure>
+        <footer>
+            <div class="contact-header">
+              <h2 class="contact"> Let's work together </h2>
+              <p>Have any questions or just want to say hi? Contact me!</p>
+            </div>
+            
+            <div class="social-links">
+              <a 
+                 href="https://www.github.com/perlarocha"
+                 target="_blank"
+                 id="profile-link"
+                 class="btn contact-details">
+                <i class="fab fa-github"></i>
+                Github 
+              </a>
+              
+              <a 
+                 href="https://www.linkedin.com/in/perla-rocha/"
+                 target="_blank"
+                 class="btn contact-details">
+                <i class="fab fa-linkedin"></i>
+                LinkedIn
+              </a>
+              
+              <a 
+                 href="https://codepen.io/perlarocha"
+                 target="_blank"
+                 class="btn contact-details">
+                 <i class="fab fa-codepen"></i>
+                Codepen
+              </a>
+              
+              <a 
+                 href="mailto: perlarocha74@gmail.com"
+                 class="btn contact-details">
+                <i class="fa fa-at"></i> 
+                Email
+              </a>
+            </div>
+    </footer>
+
+    <!-- script -->
+    <script src="/jquery.js"></script>
+    <script src="/script.js"></script>
+
+    </body>
+</html>
