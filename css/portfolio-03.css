@@ -120,6 +120,10 @@ a.p-links {
         width: 100vw;
         padding: 0 10% 5% 10%;
     }
+        
+    section {
+        margin: 2% 5%;
+    }
 }
 
 @media (min-width: 900px) {
