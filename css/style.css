@@ -169,7 +169,7 @@ ul {
 @media (max-width: 900px) {
     .intro {
         display: block;
-        padding: 5% 25% 0 25%;
+        padding: 5% 10% 0 10%;
     }
     .intro-profile {
         width: 30vw;
