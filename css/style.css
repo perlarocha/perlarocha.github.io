@@ -87,12 +87,11 @@ ul {
         text-decoration: underline;
         padding: 20px 30px;
     }
+    
+     section {
+        padding: 5em 2em;
+    }
 }
-
-section {
-    padding: 5em 2em;
-}
-
 
 /* intro section  */
 
