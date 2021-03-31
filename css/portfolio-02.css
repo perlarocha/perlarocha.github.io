@@ -127,6 +127,10 @@ strong {
     img.persona {
         width: 80vw;
     }
+        
+    section {
+        margin: 2% 5%;
+    }
 
 }
 
