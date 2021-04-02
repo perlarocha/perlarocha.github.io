@@ -3,7 +3,8 @@ html {
 }
 
 body {
-    background-color: white;
+    background-color: #F5F5F5;
+    color: #27303A;
     font-family: 'Montserrat', sans-serif;
     line-height: 1.5;
 }
@@ -20,9 +21,6 @@ ul {
 
 @media screen and (max-width: 900px) {
 
-    .logo {
-        display: none;
-    }
 
     ul {
         margin: 0;
@@ -82,16 +80,17 @@ ul {
     }
 
     .nav-menu a:hover {
-        background-color: #add8e6;
+        background-color: #C2CDC6;
         color: white;
         text-decoration: underline;
         padding: 20px 30px;
     }
-    
-     section {
+
+    section {
         padding: 5em 2em;
     }
 }
+
 
 /* intro section  */
 
@@ -148,11 +147,12 @@ ul {
         z-index: 2;
     }
 
-    .pattern-swatch {
+    .pattern-blob {
         display: inline;
+        background: #F5F5F5;
         height: 300;
         width: 300;
-        transform:  scale(2,3) translate(-70%, 0);
+        transform:  scale(2,4) translate(-70%, 0);
     }
 
     .profile-pattern {
@@ -169,7 +169,7 @@ ul {
 @media (max-width: 900px) {
     .intro {
         display: block;
-        padding: 5% 10% 0 10%;
+        padding: 10% 15% 10% 15%;
     }
     .intro-profile {
         width: 30vw;
@@ -197,16 +197,16 @@ ul {
         display: none;
     }
 
-    .pattern-swatch {
+    .pattern-blob {
         display: none;
     }
 
     .profile-pattern {
         display: none;
     }
-    
+
     footer p{
-       font-size: 0.8em;
+        font-size: 0.8em;
     }
 }
 
@@ -219,42 +219,110 @@ ul {
 
 /* projects section */
 
-.projects {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+
+@media (min-width:900px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 400px 400px 400px;
+        grid-template-rows: max-content max-content;
+        gap: 2%;
+        padding-left: 10%;
+    }
+    
+    .portfolio-card {
+        position: relative;
+        width: 100%;
+    }
+    
+    .project-info {
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(0,0,0, 0.8);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+      
+    .portfolio-card:hover .project-info {
+        height: 100%;
+    }
+    
+    img.project-image {
+        width: 100%;
+    }
+    
+    
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    
+    h3.text {
+        font-size: 3em;
+    }    
 }
 
-.portfolio-card {
-    position: relative;
-    width: 80vw;
-    padding: 5%;
-    transition: transform .2s;
+@media (max-width: 900px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 400px;
+        grid-template-rows: max-content;
+        gap: 2%;
+        padding-left: 15%;
+    }
+    
+    .portfolio-card {
+        position: relative;
+        width: 100%;
+    }
+    
+    .project-info {
+        position: absolute;
+        bottom: 0;
+        background-color: rgb(0,0,0, 0.8);
+        overflow: hidden;
+        width: 100%;
+        height: 0;
+        transition: .5s ease;
+    }
+      
+    .portfolio-card:hover .project-info {
+        height: 100%;
+    }
+    
+    img.project-image {
+        width: 100%;
+    }
+    
+    
+    .text {
+        color: white;
+        font-size: 20px;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        -webkit-transform: translate(-50%, -50%);
+        -ms-transform: translate(-50%, -50%);
+        transform: translate(-50%, -50%);
+        text-align: center;
+      }
+    
+    h3.text {
+        font-size: 3em;
+    }
 }
-
-.portfolio-card:hover {
-    transform: scale(1.1);
-}
-
-img.project-image {
-    width: 100%;
-}
-
-
-.text {
-    padding: 5% 5%;
-}
-
-h3.text {
-    font-size: 3em;
-}
-
-
 
 /* footer and contact */
 
-footer {
+.contact-info {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -263,18 +331,65 @@ footer {
     line-height: 0.5;
     padding: 10% 0;
 }
-  
+
+@media (min-width: 900px) {
+    footer {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        color: black;
+        padding: 1rem;
+        width: 100vw;
+    }
+
+    p.footer-label,
+    a.email {
+        font-size: 1em;
+        color: black;
+    }
+
+    .social-links{
+        padding-right: 5%;
+        font-size: 1.2em;
+    }
+}
+
+@media (max-width: 900px) {
+    footer {
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+        justify-content: center;
+        position: fixed;
+        bottom: 0;
+        background: white;
+        color: black;
+        width: 100vw;
+        padding-bottom: 2%;
+    }
+
+    p.footer-label,
+    a.email {
+        font-size: 1em;
+        color: black;
+    }
+
+    .social-links{
+        font-size: 1.5em;
+    }
+}
+
 .btn {
-    display: inline-block;
-    padding: 1rem 2rem;
     color: black;
-    border-radius: 0.2rem;
+
 }
   
-.btn:hover {
-    background: black;
-    color: white;
-    border-radius: 0.2rem;
+.btn:hover,
+a.email:hover {
+    color: #EAB99C
 }
 
 
@@ -298,7 +413,7 @@ a.project-label {
 
 .project-number {
     font-family: 'Anonymous Pro', monospace;
-    color: black;
+    color: white;
 }
 
 h3,
@@ -312,7 +427,7 @@ p {
 }
 
 p.project-category {
-    color: #FBC2AD;
+    color: #EAB99C;
 }
 
 
@@ -321,23 +436,23 @@ p.project-category {
 @keyframes ani {
     0% {
       transform: translate3d(0, 0, 0);
-      text-shadow: 0em 0em 0  #FBC2AD;
-      color: black;
+      text-shadow: 0em 0em 0  #EAB99C;
+      color: #27303A;
     }
     30% {
       transform: translate3d(0, 0, 0);
-      text-shadow: 0em 0em 0 lightblue;
-      color: black;
+      text-shadow: 0em 0em 0 #C2CDC6;
+      color: #27303A;
     }
     70% {
       transform: translate3d(0.08em, -0.08em, 0);
-      text-shadow: -0.08em 0.08em lightblue;
-      color: black;
+      text-shadow: -0.08em 0.08em #C2CDC6;
+      color: #27303A;
     }
     100% {
       transform: translate3d(0.08em, -0.08em, 0);
-      text-shadow: -0.08em 0.08em  #FBC2AD;
-      color: black;
+      text-shadow: -0.08em 0.08em  #EAB99C;
+      color: #27303A;
     }
   }
 
