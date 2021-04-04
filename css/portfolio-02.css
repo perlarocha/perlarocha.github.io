@@ -4,13 +4,18 @@ body {
     scroll-behavior: smooth;
 }
 
-section {
-    margin: 10% 15%;
-    border: 2px solid #E2F1DB;
-}
-
 .project-intro {
     padding-top: 10%;
+    text-align: center;
+}
+
+.wks-comparison {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.wks-comparison p {
+    grid-column: span 2;
     text-align: center;
 }
 
@@ -51,14 +56,17 @@ li.details {
 
 figure {
     background-color: #E2F1DB;
+    width: 70vw;
     padding: 5%;
+    margin-left: 10%;
 }
 
-#wks_old {
-    width: 80vw;
-    align-self: center;
-    padding: 0 10%;
+img.compare {
+    width: 45vw;
+}
 
+.section-image {
+    width: 60vw;
 }
 
 img.chart {
@@ -66,7 +74,7 @@ img.chart {
 }
 
 .final-design {
-    width: 80vw;
+    width: 70vw;
 }
 
 .chart {
@@ -127,9 +135,9 @@ strong {
     img.persona {
         width: 80vw;
     }
-        
+
     section {
-        margin: 2% 5%;
+        margin: 10% 15%;
     }
 
 }
@@ -140,5 +148,14 @@ strong {
         color: black;
         text-decoration: underline;
         padding: 20px 30px;
+    }
+
+    section {
+        margin: 10% 15%;
+        border-bottom: 2px solid #E2F1DB;
+    }
+
+    .inline-image-box {
+        text-align: center;
     }
 }
