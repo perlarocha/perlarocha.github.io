@@ -9,16 +9,6 @@ body {
     text-align: center;
 }
 
-.info-pic-box {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.info-box {
-    padding: 5% 2%;
-}
-
 li.details {
     margin: 5%;
 }
@@ -30,10 +20,6 @@ li.details-grid {
 
 /* images */
 
-#main-image {
-    width: 45vw;
-    padding-top: 10%;
-}
 
 .inline-image-box {
     text-align: center;
@@ -77,16 +63,19 @@ h1.section-title {
 }
 
 h2.project-info-header {
-    font-size: 1.5em;
+    font-size: 2em;
     padding-bottom: 5%;
     text-align: center;
     text-transform: uppercase;
     width: 100%;
 }
 
+h3.project-info-subheader {
+    font-size: 1.5em;
+}
 
 strong {
-    font-size: 1.3em;
+    font-size: 1em;
 }
 
 .highlight {
@@ -103,6 +92,16 @@ strong {
     li.number {
         display:none;
     }
+
+    .image-box {
+        padding: 10%;
+        background-color: #BEDCF4;
+    }
+
+    #empathy-map {
+        width: 70vw;
+    }
+
 }
 
 
@@ -118,17 +117,20 @@ strong {
         margin: 0 15%;
     }
 
-    #section-1,
-    #section-4 {
+    .image-box {
         display: grid;
-        grid-template-columns: 400px 600px;
-        grid-template-rows: 100px 400px;
-        gap: 5%;
-        padding-bottom: 20%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content 100px;
+        padding-left: 10%;
+        text-align: center;
     }
 
-    #section-1 h2 {
+    .image-caption {
         grid-column: span 2;
+    }
+
+    #empathy-map {
+        width: 40vw;
     }
 
     #design {
@@ -137,12 +139,16 @@ strong {
         grid-template-rows: 100px auto;
     }
 
-    #design-2 {
+    #journey-map-info {
         display: grid;
         grid-template-columns: repeat(4, 275px);
         grid-template-rows: 100px 400px;
+        list-style: none;
     }
 
+    li.details {
+        padding-right: 10%;
+    }
 
     li.number {
         list-style: none;
