@@ -18,22 +18,28 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/portfolio-02.css">
-        <link rel="stylesheet" href="css/flickity-docs.css">
+        <link rel="stylesheet" href="splide-2.4.21/dist/css/splide.min.css">
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
         <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Homemade+Apple&family=Montserrat&display=swap" rel="stylesheet">
     
+        <!-- Slider Script -->
+        <script>
+          document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#image-slider' ).mount();
+          } );
+      </script>
+
     </head>
 
     <body>
       <header>
-        <div class="logo"></div>
         <div id="static-menu">
              <ul class="nav-menu">
                  <li><a href="index.html" > Work </a></li>
-                 <!-- <li><a href="about.html"> About Me </a></li>   -->
-                 <li><a href="resume.html"> Resume </a></li>                
+                 <!-- <li><a href="about.html"> About Me </a></li>    -->
+                 <li><a href="./Resume2021_UX.pdf" class="page-links" download> Resume </a></li>                
                  <li><a href="contact.html"> Contact </a></li>
              </ul>
          </div>
@@ -66,14 +72,22 @@
           </strong></p>
 
             
-            <p class="project-info-detail"><span class="highlight">
-            In order to have continuous growth in admissions, the school website needs an upgrade to both create a more user-friendly experience and to best advertise all of their achievements.
-            </span></p>
+            <p class="project-info-detail">
+            In order to have continuous growth in admissions, the school website needs an upgrade to both <span class="highlight">create a more user-friendly experience and to best advertise all of their achievements.</span>
+            </p>
 
-            <p class="project-info-detail"><span class="highlight">
+            <p class="project-info-detail">
             There is no affiliation with Wuxi Korean School for this project other than an English Teaching role.
-            </span></p>
+            </p>
         </section>
+
+        <div class="wks-comparison">
+          <img src="images/wks_old.png" class="compare">
+          <img src="images/wks_new.png" class="compare">
+          <p class="image-caption"><em>
+            A before and after of the Wuxi Korean School homepage.
+          </em></p>
+        </div>
 
         <section id="section-2" class="case-study-section">
           <h2 class="project-info-header">
@@ -107,13 +121,7 @@
           </p>
         </section>
 
-          </figure>
-            <a href="http://wxks.kr/?main" class="old-web" target="_blank"><figure>
-              <img src="images/wks_old.svg" class="project-image" id="wks_old">
-              <figcaption>
-                Current Wuxi Korean School Webpage
-              </figcaption>
-          </figure></a>
+
 
         <section id="section-4" class="case-study-section">    
           <h3 class="project-info-subheader">
@@ -137,14 +145,14 @@
                 <li class="details"> Images and fonts are far too small ( there is a button to enlarge the font but does not work for static fonts or fonts in static images) </li>
               </ul>
             </div>
-        </section>
 
-        <figure class="chart">
-          <img src="./images/wks_comparechart.png" class="project-image">
-          <figcaption>
-            Comparison chart between Wuxi Korean School's website usability and other international schools in the surrounding area.
-          </figcaption>
-        </figure>
+            <div class="inline-image-box">
+              <img src="./images/wks_comparechart.png" class="project-image">
+              <p class="image-caption"><em>
+                Comparison chart between Wuxi Korean School's website usability and other international schools in the surrounding area.
+              </em></p>
+            </div>
+        </section>
 
         <section id="section-5" class="case-study-section">
           <img src="" class="personas">
@@ -177,20 +185,23 @@
         
         </section>
 
-          <div class="slideshow js-flickity" data-flickity='{ "wrapAround": true, "resize": true}'>
+        <figure id="image-slider" class="splide">
+          <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/persona_seojun.png" alt="">
+                  </li>
 
-            <div class="slide" id="slide-1">
-              <img src="images/persona_seojun.png" class="persona-img persona_1">
-            </div>
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/persona_euntak.png" alt="">
+                  </li>
 
-            <div class="slide">
-              <img src="images/persona_euntak.png" class="persona-img persona_2">
-            </div> 
-
-            <div class="slide">
-              <img src="images/persona_jess.png" class="persona-img persona_3">
-            </div>
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/persona_jess.png" alt="">
+                  </li>
+              </ul>
           </div>
+        </figure>
 
         <section id="section-6" class="case-study-section">
           <h2 class="project-info-header">
@@ -272,7 +283,7 @@
           <img src="images/final_gif.gif" class="section-image final-design">
         </figure>
     
-           <footer>
+        <footer>
           <div class="footer-title">
               <p class="footer-label">
                   Perla Rocha 2021 | Designer | <a href="mailto: perlarocha74@gmail.com" class="email">perlarocha74@gmail.com </a>
@@ -323,10 +334,12 @@
 
           </div>
       </footer>
+
+
     <!-- script -->
-    <script src="js/flickity-docs.min.js"></script>
     <script src="/jquery.js"></script>
     <script src="/script.js"></script>
+    <script src="splide-2.4.21/dist/js/splide.min.js"></script>
 
     </body>
 </html>
