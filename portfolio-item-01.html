@@ -18,7 +18,6 @@
 
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/portfolio-01.css">
-        <link rel="stylesheet" href="css/flickity-docs.css">
 
         <!-- fonts -->
         <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -28,12 +27,11 @@
 
     <body>
       <header>
-        <div class="logo"></div>
         <div id="static-menu">
              <ul class="nav-menu">
                  <li><a href="index.html" > Work </a></li>
-                 <!-- <li><a href="about.html"> About Me </a></li>   -->
-                 <li><a href="resume.html"> Resume </a></li>                
+                 <!-- <li><a href="about.html"> About Me </a></li>    -->
+                 <li><a href="./Resume2021_UX.pdf" class="page-links" download> Resume </a></li>                
                  <li><a href="contact.html"> Contact </a></li>
              </ul>
          </div>
@@ -75,17 +73,17 @@
             II. Research
           </h2>
 
-          <h3 class="project-info-subheader">
+          <p class="project-info-detail"><strong>
             Goal: To understand the audience and their primary needs.
-          </h3>
+          </strong></p>
 
           <p class="project-info-detail">
             Process: Observations and Interviews, Market Research
           </p>
 
-          <p class="project-info-detail"><strong>
+          <h3 class="project-info-subheader">
             Observations and Interviews:
-          </strong></p>
+          </h3>
 
           <p class="project-info-detail">
            Currently, the students having the hardest time adjusting to virtual or homeschooling have been students in levels K-5. While missing out on social interaction, they are also having to depend on themselves more as not all teachers are available to teach the same hours online as in pysical classes and parent's are busy with work from home. As such, I believe creating an app that could combine the social and interactive aspects of in-class learning with educational activities that could be done at home, would be of great benefit to the student's progress.
@@ -100,18 +98,14 @@
           </p>
         </section>
 
-        <figure class="maps">
-          <div class="maps-content">
-          <div class="maps-flex">
-            <img src="images/empathypersona_child.jpg" class="map-image" id="journey-map">
-            <img src="images/empathypersona_mother.jpg" class="map-image" id="journey-map">
-          </div>
+        <div class="image-box">
+          <img src="images/empathypersona_child.jpg" class="map-image" id="empathy-map">
+          <img src="images/empathypersona_mother.jpg" class="map-image" id="empathy-map">
+            <p class="image-caption">
+              Empathy-persona map for a child who would use the app and a mother struggling with virtual school for her child.
+            </p>
+        </div>
 
-            <figcaption id="journey-map">
-            Empathy-persona map for a child who would use the app and a mother struggling with virtual school for her child.
-            </figcaption>
-          </div>
-        </figure>
 
           <section id="section-3" class="case-study-section">    
             <h3 class="project-info-subheader">
@@ -131,7 +125,8 @@
           </p>
         </section>
 
-        <section id="section-3" class="case-study-section">    
+        <section id="section-4" class="case-study-section"> 
+          <div class="section-4-info">
           <h3 class="project-info-subheader">
             Journey Map
           </h3>
@@ -144,36 +139,36 @@
             In doing so, I discovered several points of importance to address in the application mockup.
           </p>
 
-          <div class="info-pic-box">
             <div class="info-box">
-              <ul class="details-list">
-                <li class="details"><strong class="highlight"> Easy-to-follow structure </strong> Lessons should go in chronolocial order and should build on previous lessons. </li>
-                <li class="details"> <strong class="highlight"> Skill assessment </strong> Option to take a skills test at the beginning of a module or to unlock a new module in order to assess their current level and know which content will need more focus or can be skipped. </li>
-                <li class="details"> <strong class="highlight"> Interactivity with classmates and teacher </strong> Have a local leaderboard with the students in their class. Compete for points. </li>
-                <li class="details"> <strong class="highlight"> Focus on math and reading </strong> Give emphasis to impoving math and reading comprehension. </li>
-              </ul>
+            <ul class="details-list" id="journey-map-info">
+              <li class="details number"> 1 </li>
+              <li class="details number"> 2 </li>
+              <li class="details number"> 3 </li>
+              <li class="details number"> 4 </li>
+              <li class="details"><span class="highlight"> Easy-to-follow structure </span> <br> Lessons should go in chronolocial order and should build on previous lessons. </li>
+              <li class="details"> <span class="highlight"> Skill assessment </span> <br> Option to take a skills test at the beginning of a module or to unlock a new module in order to assess their current level and know which content will need more focus or can be skipped. </li>
+              <li class="details"> <span class="highlight"> Interactivity with classmates and teacher </span> <br> Have a local leaderboard with the students in their class. Compete for points. </li>
+              <li class="details"> <span class="highlight"> Focus on math and reading </span> <br> Give emphasis to impoving math and reading comprehension. </li>
+            </ul>
             </div>
           </div>
 
-        </section>
-
-        <figure class="maps">
-          <div class="maps-content">
-          <img src="images/Leap_journeymap.jpg" class="data-image">
-            <figcaption  id="journey-map">
+          <div class="inline-image-box">
+            <img src="images/Leap_journeymap.jpg" class="data-image">
+            <p class="image-caption">
               Journey map of a mother and daughter's experience first using the app.
-            </figcaption>
+            </p>
           </div>
-        </figure>
+        </section>
 
         <section id="section-5" class="case-study-section">
           <h2 class="project-info-header">
            III. Design
           </h2>
 
-          <h3 class="project-info-subheader"><span class="highlight">
+          <p class="project-info-detail"><strong>
             Goal: To create lo and hi fidelity prototypes of the app that meets the user's needs.
-          </span></h3>
+          </strong></p>
 
           <p class="profile-info-detail">
             Process: Wireframes using Figma. Prototype using AdobeXD.
@@ -186,8 +181,8 @@
           <p class="profile-info-detail detail-italic">
             At the beginning of my design process I created wireframes for testing purposes.
             <ul class="details-list">
-              <li class="details"> This helped me to visualize the chronological order for each step in the process. </li>
-              <li class="details"> I made simple lo-fidelity sketches by hand first, then used Figma sketch to create a better layout representation. </li>
+              <li class="details"> This helped me to visualize the chronological order for each step in the process. I made simple lo-fidelity sketches by hand first, then used Figma sketch to create a better layout representation. </li>
+              <li class="details"> I designed the buttons to be fairly big in order to provide the best comfort and accessibility to all ages, especiallly younger children. I also believe incorporating a design that has button sizes and actions that change with an increase in task difficulty to be a good way to keep children engaged. For instance, with children in kindergarten, they might be limited to basic gestures such as tap while the 5th graders might have an open-ended answer section or various gestures including but not limited to swipe, drag, or shake. </li>
             </ul>
           </p>
         </section>
@@ -228,7 +223,7 @@
           <p class="profile-info-detail">
             <ul class="details-list">
               <li class="details"> Based on the interviews, I found that what most parents want for their children is a focus on math and reading that can act as supplementary material to their virtual schooling. </li>
-              <li class="details"> Testing the protype on child users, I saw that were able to navigate through the app quite easily on their own and they enjoyed getting points for their character as they completed the sample lesson. </li>
+              <li class="details"> Testing the designs on child users, I saw that were able to navigate through the app quite easily on their own and they enjoyed getting points for their character as they completed the sample lesson. </li>
             </ul>
           </p>
 
@@ -267,7 +262,8 @@
             allowFullScreen>
         </iframe>
         </figure>
-            <footer>
+
+        <footer>
           <div class="footer-title">
               <p class="footer-label">
                   Perla Rocha 2021 | Designer | <a href="mailto: perlarocha74@gmail.com" class="email">perlarocha74@gmail.com </a>
@@ -318,6 +314,8 @@
 
           </div>
       </footer>
+
+
     <!-- script -->
     <script src="/jquery.js"></script>
     <script src="/script.js"></script>
