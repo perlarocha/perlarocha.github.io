@@ -1,14 +1,19 @@
+#contact-title {
+    padding-bottom: 0;
+}
+
 #form {
     display:block;
 }
 
 form {
     width: 70vw;
-    padding: 0 13%;
+    padding: 5% 13%;
 }
 
 .form-group {
-    margin-bottom: 1rem;
+    margin-bottom: 2em;
+    text-align: left;
 }
 
 .input-group {
@@ -48,11 +53,11 @@ select.form-control[size], select.form-control[multiple] {
 }
 
 textarea.form-control {
-    font-family: -apple-system, Arial, sans-serif;
+    font-family: 'Montserrat', sans-serif;
     height: auto;
 }
 
-label.label {
+label.form-label {
     display: inline-block;
     margin-bottom: 0.5rem;
 }
