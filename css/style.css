@@ -320,6 +320,16 @@ ul {
     }
 }
 
+@media (max-width: 560px) {
+    .projects {
+        display: grid;
+        grid-template-columns: 300px;
+        grid-template-rows: max-content;
+        gap: 2%;
+    }
+}
+
+
 /* footer and contact */
 
 .contact-info {
@@ -379,6 +389,18 @@ ul {
 
     .social-links{
         font-size: 1.5em;
+    }
+}
+
+@media (max-width: 560px) {
+    p.footer-label,
+    a.email {
+        font-size: 0.8em;
+        color: black;
+    }
+
+    #project-4 {
+        padding-bottom: 20%;
     }
 }
 
