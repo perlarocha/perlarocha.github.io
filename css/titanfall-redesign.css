@@ -1,0 +1,160 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+}
+
+.project-intro {
+    padding-top: 10%;
+    text-align: center;
+}
+
+figcaption {
+    text-align: center;
+    color: white;
+}
+
+.info-pic-box {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.info-box {
+    padding: 5% 2%;
+}
+
+li.details {
+    margin: 5%;
+}
+
+/* images */
+
+figure {
+    background-color: #221605;
+    padding: 5%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.maps-flex {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.maps-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+img.chart {
+    width: 50vw;
+    padding-left: 10%;
+}
+
+img.data-image {
+    width: 80vw;
+    padding: 0 25%;
+}
+
+img.explanation-image {
+    width: 70vw;
+    margin-left: 15%;
+}
+
+.final-design {
+    width: 80vw;
+}
+
+
+/* typography */
+
+h1.section-title {
+    font-size: 4em;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 5px 5px#FFA024;
+}
+
+h2.project-info-header {
+    font-size: 1.5em;
+    padding-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+p.project-info-subheader {
+    font-size: 1.3em;
+    font-weight: 600;
+}
+
+strong {
+    font-size: 1.3em;
+}
+
+.highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 65%, rgb(255, 160, 36, 0.6) 65%);
+    font-size: 1.1em;
+  }
+
+
+
+/* media queries */
+
+@media (max-width: 900px ) {
+    .maps-flex {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .map-image {
+        width: 80vw;
+        padding: 0 10% 5% 10%;
+    }
+
+    img.data-image {
+        width: 100vw;
+        padding: 0 10% 5% 10%;
+    }
+
+    img.section-image {
+        width: 100vw;
+        padding: 0 10% 5% 10%;
+    }
+
+    section {
+        margin: 10% 15%;
+    }
+}
+
+@media (min-width: 900px) {
+    .nav-menu a:hover {
+        background-color: rgb(255, 160, 36, 0.6);
+        color: black;
+        text-decoration: underline;
+        padding: 20px 30px;
+    }
+
+    .map-image {
+        width: 50vw;
+        padding: 0 10% 5% 10%;
+    }
+
+    img.data-image {
+        width: 90vw;
+        padding: 0 10% 5% 10%;
+    }
+
+    section {
+        margin: 10% 15%;
+        border: 2px solid black;
+    }
+}
