@@ -220,13 +220,26 @@ ul {
 /* projects section */
 
 
+#web {
+    background-color: #CBD4CE;
+}
+
+#games {
+    background-color: #D7C8D0;
+    padding-bottom: 10%;
+}
+
+#apps {
+    background-color: white;
+}
+
 @media (min-width:900px) {
     .projects {
         display: grid;
-        grid-template-columns: 400px 400px 400px;
+        grid-template-columns: 400px 400px;
         grid-template-rows: max-content max-content;
-        gap: 2%;
-        padding-left: 10%;
+        gap: 10%;
+        padding-left: 20%;
     }
     
     .portfolio-card {
