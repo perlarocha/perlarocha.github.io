@@ -1,0 +1,370 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        
+        <title>Perla Portfolio Website</title>
+
+        <!-- Icons -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+        <svg height="10" width="10" xmlns="http://www.w3.org/2000/svg" version="1.1"> <defs> <pattern id="circles-2" patternUnits="userSpaceOnUse" width="10" height="10"> <image xlink:href="data:image/svg+xml;base64,PHN2ZyB4bWxucz0naHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmcnIHdpZHRoPScxMCcgaGVpZ2h0PScxMCc+CiAgPHJlY3Qgd2lkdGg9JzEwJyBoZWlnaHQ9JzEwJyBmaWxsPSd3aGl0ZScgLz4KICA8Y2lyY2xlIGN4PScxLjUnIGN5PScxLjUnIHI9JzEuNScgZmlsbD0nYmxhY2snLz4KPC9zdmc+Cg==" x="0" y="0" width="10" height="10"> </image> </pattern> </defs> </svg>
+
+
+        <!-- stylesheets -->
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/7.0.0/normalize.min.css">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" integrity="sha256-46qynGAkLSFpVbEBog43gvNhfrOj+BmwXdxFgVK/Kvc=" crossorigin="anonymous" />  
+
+        <link rel="stylesheet" href="css/style.css">
+        <link rel="stylesheet" href="css/titanfall-redesign.css">
+        <link rel="stylesheet" href="splide-2.4.21/dist/css/splide.min.css">
+
+        <!-- fonts -->
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+        <link href="https://fonts.googleapis.com/css2?family=Anonymous+Pro&family=Homemade+Apple&family=Montserrat&display=swap" rel="stylesheet">
+    
+
+        <!-- Slider Script -->
+        <script>
+            document.addEventListener( 'DOMContentLoaded', function () {
+	        new Splide( '#image-slider' ).mount();
+            } );
+        </script>
+
+        <script>
+          document.addEventListener( 'DOMContentLoaded', function () {
+        new Splide( '#image-slider-2' ).mount();
+          } );
+        </script>
+
+    </head>
+
+    <body>
+      <header>
+        <div id="static-menu">
+             <ul class="nav-menu">
+                 <li><a href="index.html" > Work </a></li>
+                 <!-- <li><a href="about.html"> About Me </a></li>    -->
+                 <li><a href="./Resume2021_UX.pdf" class="page-links" download> Resume </a></li>                
+                 <li><a href="contact.html"> Contact </a></li>
+             </ul>
+         </div>
+     </header>
+
+     <div id="project-title" class="project-intro" >
+      <h1 class="section-title">
+          Titanfall UI Redesign
+      </h1>
+      <p class="section-subtitle subtitle-intro"><span class="highlight">
+          Redesign of Titanfall's menus, loadouts, and in-game multiplayer Titan HUD
+        </span></p>
+    </div>
+
+        <section id="section-1" class="case-study-section">
+          <h2 class="project-info-header">
+           I. Overview
+          </h2>
+
+          <p class="project-info-detail"><strong>
+            Titanfall 2 is the sequel to the science-fiction first-person shooter Titanfall developed by Respawn Entertainment. It features single player campaign and multiplayer modes. 
+          </strong></p>
+
+          <p class="project-info-detail">
+              With several positive reviews above 89%, it seems to be an all near-perfect game. However, even with such stellar ratings, no game can escape complaints. What Titanfall succeeds in with story and overall gameplay, it lacks in UI. 
+          </p>
+
+          <p class="project-info-subheader">
+            Objective
+          </p>
+
+            
+            <p class="project-info-detail">
+            In order to provide users with enjoyable gameplay and true escapism into a virtual world, <span class="highlight">a redesign of the menus, loadouts, and in-game HUD will greatly improve usability.
+            </span></p>
+        </section>
+
+        <figure class="maps">
+          <div class="maps-content">
+          <img src="https://kai-opitz.com/wp-content/uploads/2017/04/GUI_OVerkill-1024x576.png" class="section-image" >
+            <figcaption>
+              Titanfall in-game multiplayer UI Overkill credits to kai-opitz.com
+            </figcaption>
+          </div>
+        </figure>
+
+        <section id="section-2" class="case-study-section">
+          <h2 class="project-info-header">
+            II. Research
+          </h2>
+
+          <p class="project-info-subheader">
+            Goal: To understand the audience and their primary needs during gameplay.
+          </p>
+
+          <p class="project-info-detail"><em>
+            Process: User Interviews, Market Research         
+          </em></p>
+
+          <p class="project-info-subheader">
+            Interviews:
+          </p>
+
+          <p class="project-info-detail">
+            I began by identifying points I noticed hindered my own experience while playing the game. I reached out to my friend group and found others who had noticed some design flaws while they also played. I interviewed them and wrote down their responses then watched them interact with the gameplay, recording any instances where they verbally or physically displayed frustration. 
+          </p>
+
+          <p class="project-info-detail">
+           I compiled the results of the interviews and observations into an empathy map describing the experience the average user has while playing this game. 
+          </p>
+        </section>
+
+          <section id="section-3" class="case-study-section">    
+            <p class="project-info-subheader">
+              Market Research
+            </p>
+
+          <p class="project-info-detail">
+            The UI of most futuristic first person shooters follow a semi-Meta type UI. In other words, the elements that make up the important information for the player are displayed on the screen in a way that fits in with the overall style and narrative of the game. In Titanfall 2, these elements are displayed on the HUD (Heads Up Display) and fit the aesthetic, especially when piloting a Titan. However, one of the main problems isn't with the layout itself, but more so the overload of information that occurs when in multiplayer matches. This can also be seen in several other multiplayer first person shooters such as Call of Duty and Battlefield.
+          </p>
+
+          <p class="project-info-detail">
+            Displayed on the HUD are the player stats, team information, spatial information, the minimap, game mode name/score/timer, and the reward system which out of all the elements seems to be the most redundant and bothersome. When playing an intense match, being able to see the full extent of the screen is crucial, so bombarding the screen with reward badges, banners, kill streaks just add to the chaos. I believe these elements can either be done without or can be added with audio or smaller, less frequent visual cues, still adding positive feedback.
+          </p>
+
+          <p class="project-info-detail">
+            While looking up details about the game itself, I came across several reviews and reddit threads that actually pointed out very similar frustrations to those I heard in the interviews. Of them, the most commonly disscussed issue was the overload of information that occurs right in the middle of action-packed moments in multiplayer matches. Using this information I was able to focus on the main elements that needed change. 
+          </p>
+        </section>
+
+        <section id="section-3" class="case-study-section">    
+          <p class="project-info-subheader">
+            Journey Map
+          </p>
+
+          <p class="project-info-detail">
+            After the interviews, observations, and research, I compiled the information I gathered into an empathy map illustrating the feelings, thoughts, actions, and sights of a player interacting with the game. 
+          </p>
+
+          <p class="project-info-detail">
+            In doing so, I discovered several repeated points that needed to be addressed in the redesign. 
+          </p>
+
+          <div class="info-pic-box">
+            <div class="info-box">
+              <ul class="details-list">
+                <li class="details"><strong class="highlight"> Minimalistic HUD </strong> Display should have as little interference with icons or other elements that aren't helpful to the user.  </li>
+                <li class="details"> <strong class="highlight"> Modernized Loadouts and Scoreboards </strong> Updating the style to complement current FPS designs and adding personalized scoreboards. </li>
+              </ul>
+            </div>
+          </div>
+
+        </section>
+
+        <figure class="maps">
+          <div class="maps-content">
+          <img src="images/Titanfall_UI/titanfall_empathy" class="data-image" id="empathy-map">
+            <figcaption>
+              Empathy map of a user's experience while playing the game
+            </figcaption>
+          </div>
+        </figure>
+
+        <section id="section-5" class="case-study-section">
+          <h2 class="project-info-header">
+           III. Design
+          </h2>
+
+          <p class="project-info-subheader"><span class="highlight">
+            Goal: To create lo and hi fidelity mockups of the proposed Titanfall HUD and loadout changes.
+          </span></p>
+
+          <p class="profile-info-detail"><em>
+            Process: Hand-drawn sketches of the layouts on Adobe Fresco and mockup on Adobe XD.
+          </em></p>
+
+          <p class="project-info-subheader">
+            Sketches
+          </p>
+
+          <p class="profile-info-detail detail-italic">
+            At the beginning of my design process I sketched out the intended positions of elements on the screens. I wanted to maintain the same feel to Titanfall that has already been established, just changing a few elements to improve the user experience. 
+            <ul class="details-list">
+              <li class="details"> This helped me to visualize the important details that needed to be displayed on each screen. The most noticeable changes are on the scoreboard, as there is now the character image and individual stats displayed larger on the right side of the screen, and the Titan HUD with minimized icons and less clutter in the center of the screen.</li>
+              <li class="details"> The lo-fidelity iterations were shown to a few participants to see if they could first, recognize the game, then notice the design changes. This later helped me refine the design. </li>
+            </ul>
+          </p>
+        </section>
+
+        <figure id="image-slider" class="splide">
+                <div class="splide__track">
+                    <ul class="splide__list">
+                        <li class="splide__slide">
+                            <img class="splide-image" src="images/Titanfall_UI/Pilot_Loadout.png" alt="">
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide-image" src="images/Titanfall_UI/Titan_Select.png" alt="">
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide-image" src="images/Titanfall_UI/Multiplayer_Match_Menu.png" alt="">
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide-image" src="images/Titanfall_UI/Match_End_Scoreboard.png" alt="">
+                        </li>
+
+                        <li class="splide__slide">
+                            <img class="splide-image" src="images/Titanfall_UI/Multiplayer_HUD.png" alt="">
+                        </li>
+                    </ul>
+                </div>
+        </figure>
+
+        <section id="section-6" class="case-study-section">
+          <p class="project-info-subheader">
+            UI Design
+          </p>
+
+          <p class="profile-info-detail detail-italic">
+            Once I started arranging the assets on AdobeXD, I noticed some other areas that could be further improved. Per user's request, I added the match best feature with an added toggle function to swith between match totals/individual stats and the match bests.
+          </p>
+
+          <p class="profile-info-detail">
+            Keeping in mind the styles of other fps games, I opted for a background that included map images with a dark overlay in lieu of the colored background. I also used more color as a highlight for selections.
+          </p>
+
+          <p class="profile-info-detail">
+            <ul class="details-list">
+              <li class="details"> Based on the interviews, I found that what most users wanted was less clutter on the gameplay screens.  </li>
+              <li class="details"> Testing the protype on users, I saw that users were able to navigate between pages and create a new appointment without difficulty.  </li>
+              <li class="details"> Users also enjoyed seeing the care guide included on the page as some of the interviewees had never obtained these services. </li>
+            </ul>
+          </p>
+        </section>
+
+        <div class="explanation">
+          <img src="images/Titanfall_UI/Titan_HUD.png" class="explanation-image">
+          <img src="images/Titanfall_UI/Multiplayer.png" class="explanation-image">
+          <img src="images/Titanfall_UI/Scoreboard.png" class="explanation-image">
+        </div>
+
+        <section id="section-7" class="case-study-section">
+          <h2 class="project-info-header">
+           IV. Final Thoughts
+          </h2>
+
+          <p class="project-info-detail">
+            <ul class="details-list">
+              <li class="details"> One of the main challenges was designing the UI in a way that would be recognizeable as Titanfall while not having official assets to aid in the design. </li>
+              <li class="details"> Another challenge was determining how to create a balance between images and content to maintain a minimalistic feel without it being too plain.</li>
+              <li class="details"> Playing video games has been one of my longest hobbies. I hope that in the near future, I can help in game development to bring enjoyment to people's lives. </li>
+
+            </ul>
+          </p>
+        </section>
+
+        <figure id="image-slider-2" class="splide">
+          <div class="splide__track">
+              <ul class="splide__list">
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/Titanfall_UI/titan_hud1.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/Titanfall_UI/titan_hud2.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/Titanfall_UI/titan_hud3.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/Titanfall_UI/match_best.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                      <img class="splide-image" src="images/Titanfall_UI/totals_scoreboard.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                    <img class="splide-image" src="images/Titanfall_UI/titan_loadout.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                    <img class="splide-image" src="images/Titanfall_UI/titan_match.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                    <img class="splide-image" src="images/Titanfall_UI/pilot_match.png" alt="">
+                  </li>
+
+                  <li class="splide__slide">
+                    <img class="splide-image" src="images/Titanfall_UI/pilot_loadout_.png" alt="">
+                  </li>
+              </ul>
+            </div>
+          </figure>
+
+
+          <footer>
+            <div class="footer-title">
+                <p class="footer-label">
+                    Perla Rocha 2021 | Designer | <a href="mailto: perlarocha74@gmail.com" class="email">perlarocha74@gmail.com </a>
+                </p>
+            </div>
+            <div class="social-links">
+              <a 
+                 href="https://www.github.com/perlarocha"
+                 target="_blank"
+                 id="profile-link"
+                 class="btn contact-details">
+                <i class="fab fa-github"></i>
+                <!-- Github  -->
+              </a>
+              
+              <a 
+                 href="https://www.linkedin.com/in/perla-rocha/"
+                 target="_blank"
+                 class="btn contact-details">
+                <i class="fab fa-linkedin"></i>
+                <!-- LinkedIn -->
+              </a>
+              
+              <a 
+                 href="https://codepen.io/perlarocha"
+                 target="_blank"
+                 class="btn contact-details">
+                 <i class="fab fa-codepen"></i>
+                <!-- Codepen -->
+              </a>
+              
+              <a 
+                 href="https://www.behance.net/nohemyloyola"
+                 target="_blank"
+                 class="btn contact-details">
+                 <i class="fab fa-behance"></i>
+                <!-- Behance -->
+              </a>
+
+              <a 
+                 href="https://www.instagram.com/perlanohemy"
+                 target="_blank"
+                 class="btn contact-details">
+                 <i class="fab fa-instagram"></i>
+                 <!-- Instagram -->
+              </a>
+
+
+            </div>
+        </footer>
+
+
+    <!-- script -->
+    <script src="/jquery.js"></script>
+    <script src="/script.js"></script>
+    <script src="splide-2.4.21/dist/js/splide.min.js"></script>
+
+    </body>
+</html>
