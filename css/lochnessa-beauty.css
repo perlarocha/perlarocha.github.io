@@ -25,7 +25,6 @@ li.details {
 
 li.details-grid {
     list-style: none;
-    padding: 0 8%;
 }
 
 /* images */
@@ -134,22 +133,21 @@ strong {
 
     #design {
         display: grid;
-        grid-template-columns: 350px 350px 350px;
-        grid-template-rows: 100px auto;
-    }
-
-    #design-2 {
-        display: grid;
-        grid-template-columns: repeat(4, 275px);
-        grid-template-rows: 100px 400px;
+        grid-template-columns: 100px 2fr;
+        grid-template-rows: 1fr 1fr;
     }
 
 
     li.number {
         list-style: none;
-        text-align: center;
+        text-align: right;
         font-size: 2em;
         font-weight: 900;
         color: #e2bcb5ff;
+        padding-top: 45%;
+    }
+
+    li.details-grid {
+        text-align: left;
     }
 }
