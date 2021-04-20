@@ -30,6 +30,15 @@ li.details {
 
 /* images */
 
+.parallax {
+    background-image: url("https://image.api.playstation.com/vulcan/img/rnd/202010/0613/DofWaSgGffRBByLa8OvYgYFG.png");
+    height: 70vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
 figure {
     background-color: black;
     padding: 5%;
