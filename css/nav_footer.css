@@ -73,15 +73,6 @@ ul {
         text-decoration: underline;
         padding: 20px 30px;
     }
-
-    section {
-        padding: 5em 0;
-        position: relative;
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        min-height: 60vh;
-    }
 }
 
 /* footer and contact */
