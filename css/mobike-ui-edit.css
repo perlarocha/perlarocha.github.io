@@ -80,6 +80,12 @@ strong {
     }
 
     section {
+        padding: 5em 0;
+        position: relative;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-height: 60vh;
         border-bottom: 2px solid #FF815E;
     }
 
