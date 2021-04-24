@@ -1,0 +1,128 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    line-height: 1.5;
+    scroll-behavior: smooth;
+    padding-bottom: 10%;
+}
+
+.project-intro {
+    padding-top: 10%;
+    text-align: center;
+}
+
+
+section {
+    border-bottom: solid 2px #FF815E;
+}
+
+/* images */
+
+.comparison p {
+    grid-column: span 2;
+}
+
+/* typography */
+
+h1.section-title {
+    font-size: 4em;
+    color: black;
+    text-transform: uppercase;
+    text-shadow: 5px 5px hsl(13, 100%, 68%, 70%);
+}
+
+h2.project-info-header {
+    font-size: 1.5em;
+    padding-bottom: 5%;
+    text-align: center;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+
+strong {
+    font-size: 1.3em;
+}
+
+.highlight {
+    background: linear-gradient(180deg,rgba(255,255,255,0) 65%, hsl(13, 100%, 68%, 70%) 65%);
+  }
+
+  p.image-caption {
+    text-align: center;
+  }
+
+
+/* media queries */
+@media (max-width: 900px) {
+    section {
+        margin: 10% 5%;
+    }
+
+    .comparison {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    img.compare {
+        height: 40vh;
+        padding-left: 15%;
+    }
+}
+
+
+@media (min-width: 900px) {
+    .nav-menu a:hover {
+        background-color:#F29773;
+        color: black;
+        text-decoration: underline;
+        padding: 20px 30px;
+    }
+
+    section {
+        border-bottom: 2px solid #FF815E;
+    }
+
+    section:nth-child(odd) {
+        background-color: #F29773;
+    }
+
+    #section-1 {
+        margin: 10% 15%;
+    }
+
+    .comparison {
+        display: flex;
+        justify-content: space-between;
+        width: 100%;
+    }
+
+    section:nth-child(even) .comparison{
+        flex-direction: row-reverse;
+    }
+
+    .list {
+        padding: 5%;
+        background: #F5F5F5;
+        width: 40vw;
+    }
+
+    li {
+        margin-bottom: 5%;
+    }
+
+    .list-images {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: max-content max-content;
+        gap: 2%;
+        margin-left: 3%;
+        color: #F5F5F5;
+        font-weight: 600;
+    }
+    
+    img.compare {
+        height: 70vh;
+        box-shadow: 0 25px 35px rgb(0,0,0, 0.1);
+    }
+}
