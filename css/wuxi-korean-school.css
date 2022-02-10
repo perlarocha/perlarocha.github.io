@@ -94,7 +94,7 @@ h1.section-title {
     font-size: 4em;
     color: black;
     text-transform: uppercase;
-    text-shadow: 5px 5px#E2F1DB;
+    text-shadow: 5px 5px#77BD54;
 }
 
 h2.project-info-header {
@@ -152,7 +152,7 @@ strong {
 
     section {
         margin: 10% 15%;
-        border-bottom: 2px solid #E2F1DB;
+        border-bottom: 2px solid #77BD54;
     }
 
     .inline-image-box {
