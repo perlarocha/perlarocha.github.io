@@ -88,8 +88,8 @@ img.chart {
     width: 50vw;
 }
 
-.project-image img{
-    width: 50vw;
+img.project-image {
+    width: 35vw;
 }
 
 /* typography */
