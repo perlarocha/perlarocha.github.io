@@ -88,10 +88,6 @@ img.chart {
     width: 50vw;
 }
 
-img.project-image {
-    width: 100px;
-}
-
 /* typography */
 
 h1.section-title {
@@ -143,6 +139,10 @@ strong {
     section {
         margin: 10% 15%;
     }
+    
+    img.project-image {
+    width: 100%;
+}
 
 }
 
