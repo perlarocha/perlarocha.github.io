@@ -162,4 +162,8 @@ strong {
     .inline-image-box {
         text-align: center;
     }
+    
+    img.project-image {
+        width: 100px;
+    }
 }
