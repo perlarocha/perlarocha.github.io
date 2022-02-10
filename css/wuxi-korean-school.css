@@ -140,6 +140,9 @@ strong {
         margin: 10% 15%;
     }
 
+    img.project-image {
+        width: 80vw;
+    }
 }
 
 @media (min-width: 900px) {
